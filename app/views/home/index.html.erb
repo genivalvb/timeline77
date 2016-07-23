@@ -1,0 +1,22 @@
+<!-- main timeline section -->
+<section id="cd-timeline" class="cd-container cssanimations">
+
+  <% @registros.each do |registro| %>
+
+  <!--single timeline event -->
+  <div class="cd-timeline-block">
+    <div class="cd-timeline-img cd-picture">
+      <%= image_tag("event-calendar") %>
+    </div>
+    <% if registro.evento %>
+    <div class="cd-timeline-content">
+      <h3><%= registro.evento.titulo %></h3>
+      <p></p>
+    <% end %>
+      <span class="cd-date">Ano: <%= registro.ano %></span>
+    </div>
+  </div>
+
+  <% end %>
+
+</section>

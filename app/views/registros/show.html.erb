@@ -1,0 +1,9 @@
+<p id="notice"><%= notice %></p>
+
+<ul>
+  <li>Ano: <%= @registro.ano %></li>
+</ul>
+
+<li><%= link_to 'Editar Registro', edit_registro_path(@registro) %></li>
+<li><%= link_to 'New Year', new_registro_path %></li>
+<li><%= link_to 'Back', registros_path %></li>

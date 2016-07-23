@@ -1,0 +1,16 @@
+<h2>Home dos Eventos</h2>
+
+<%= @eventos.each do |evento| %>
+
+<h2>Evento: <%= evento.registro.ano %></h2>
+
+<ul>
+  <div class="form-control">
+    <li>Evento: <%=evento.titulo %></li>
+    <li>Descrição: <%=evento.descricao %></li>
+  </div>
+</ul>
+
+<% end %>
+
+<li><%= link_to 'New Event', new_evento_path %></li>

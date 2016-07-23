@@ -1,0 +1,12 @@
+<p id="notice"><%= notice %></p>
+
+<h2>Ano: <%= @evento.registro.ano %></h2>
+
+<ul>
+  <li>Evento: <%= @evento.titulo %></li>
+  <li>Descrição: <%= @evento.descricao %></li>
+</ul>
+
+<li><%= link_to 'Editar Evento', edit_evento_path(@evento) %></li>
+<li><%= link_to 'New Event', new_evento_path %></li>
+<li><%= link_to 'Back', eventos_path %></li>

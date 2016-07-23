@@ -1,0 +1,11 @@
+<h2>New Registro</h2>
+
+<%= render 'form' %>
+
+<div>
+<ul>
+  <% @registros.each do |registro|  %>
+    <li><%= registro.ano %></li>
+  <% end %>
+</ul>
+</div>

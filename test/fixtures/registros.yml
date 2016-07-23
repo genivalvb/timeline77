@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ano: 1
+  evento: MyString
+  descricao: MyText
+
+two:
+  ano: 1
+  evento: MyString
+  descricao: MyText

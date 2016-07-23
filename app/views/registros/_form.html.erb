@@ -1,0 +1,9 @@
+<%= form_for @registro do |f| %>
+  <div class="form-group">
+    <%= f.label :ano %><br/>
+    <%= f.text_field :ano %>
+  </div>
+  <p>
+    <%= f.submit "Submeter", :class => 'btn btn-primary' %>
+  </p>
+<% end %>

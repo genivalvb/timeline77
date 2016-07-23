@@ -1,0 +1,12 @@
+<h2>Home dos Registros--</h2>
+
+<%= @registros.each do |registro| %>
+
+<ul>
+  <div class="form-control">
+    <li>Ano: <%= registro.ano %></li>
+  </div>
+
+</ul>
+<% end %>
+<li><%= link_to 'New Year', new_registro_path %></li>
